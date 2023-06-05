@@ -1,0 +1,100 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+  height: 90px;
+  padding: 0 7%;
+  background-color: #fff;
+  /* border: 1px solid rgb(226, 226, 226); */
+}
+
+.logo {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  border: 1px solid rgb(226, 226, 226);
+}
+
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  gap: 15px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+}
+.login-btn {
+  color: #000;
+}
+.create-event-btn {
+  color: #fff;
+  /* width: 146px;
+    height: 504px; */
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #ff5722;
+}
+
+.navbar .icon-menu {
+  display: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar .logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+  .navbar .icon-menu {
+    display: block;
+    top: 25px;
+    right: 0px;
+  }
+
+  
+
+  .nav-links {
+    top: 0;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 255, 255, 0.203);
+    backdrop-filter: blur(8px);
+    /* margin-left: -100%; */
+  }
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+  }
+}
