@@ -48,11 +48,13 @@
   background-color: #ff5722;
 }
 
-.navbar .icon-menu {
-  display: none;
-  position: absolute;
-  width: 30px;
-  height: 30px;
+.icon-menu {
+    /* display: flex; */
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 25px;
+      right: 0px;
 }
 
 @media screen and (max-width: 900px) {
@@ -64,20 +66,18 @@
     top: 25px;
     left: 25px;
   }
-  .navbar .icon-menu {
+  /* .navbar .icon-menu {
     display: block;
     top: 25px;
     right: 0px;
-  }
-
-  
+  } */
 
   .nav-links {
+    display: none;
     top: 0;
     left: 0;
     margin: 0;
     position: absolute;
-    display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
