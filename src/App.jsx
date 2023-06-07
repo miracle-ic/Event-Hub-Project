@@ -15,7 +15,7 @@ const App = () => {
     
     <>
       {/* <Home /> */}
-      <TicketModel />
+      <Footer2 />
       {/* <Footer /> */}
     </>
     
