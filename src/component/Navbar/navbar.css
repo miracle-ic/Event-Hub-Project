@@ -7,53 +7,46 @@
   padding: 0 7%;
   background-color: #fff;
   /* border: 1px solid rgb(226, 226, 226); */
-  /* position: fixed; */
 }
 
-.navbar-logo {
+.logo {
   font-family: "Manrope", sans-serif;
   font-weight: bold;
   font-size: 24px;
+  color: #000;
+  text-decoration: none;
 }
 
-.navbar-menu {
+.nav-links {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
   width: 100%;
-  border: 3px solid #f00;
+  /* border: 1px solid rgb(226, 226, 226); */
 }
 
-.navbar-menu li {
+.nav-links ul {
   display: flex;
-  align-items: center;
-  /* justify-content: flex-end; */
   list-style-type: none;
-  padding-left: 50px;
-  font-weight: 400;
-  font-size: 16px;
+  text-decoration: none;
+  gap: 15px;
 }
 
-.create-event {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 146px;
-  height: 54px;
-  border-radius: 4px;
+.nav-links ul li a {
+  text-decoration: none;
+}
+.login-btn {
+  color: #000;
+}
+.create-event-btn {
   color: #fff;
+  /* width: 146px;
+    height: 504px; */
+  padding: 15px;
+  border-radius: 4px;
+  margin-left: 50px;
   background-color: #ff5722;
-}
-
-.login {
-  background-color: #f00;
-}
-
-.login:hover {
-  cursor: pointer;
-}
-
-.create-event:hover {
-  cursor: pointer;
 }
 
 .icon-menu {
@@ -71,19 +64,40 @@
   .navbar .icon-menu {
     display: block;
   }
-
-  .navbar-menu {
-    display: flex;
+  .navbar .logo {
     position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+  /* .navbar .icon-menu {
+    display: block;
+    top: 25px;
+    right: 0px;
+  } */
+
+  .nav-links {
+    display: none;
+    top: 0;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 255, 255, 0.203);
+    backdrop-filter: blur(8px);
+    /* margin-left: -100%; */
+  }
+  .nav-links ul {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: aqua;
+    margin: 0;
+    padding: 0;
   }
-
-  
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+  }
 }

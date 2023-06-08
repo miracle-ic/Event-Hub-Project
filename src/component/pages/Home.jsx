@@ -6,6 +6,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { MdArrowDropDown } from "react-icons/md";
 import { HiArrowRight } from "react-icons/hi";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import Navbar2 from '../others/Navbar2'
 import "./home.css";
 
 const Home = () => {

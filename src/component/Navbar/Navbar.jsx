@@ -5,15 +5,23 @@ import { AiOutlineMenu } from "react-icons/ai";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-logo">Event</div>
-      <ul className="navbar-menu">
-        <li>
-          <div className="login">Login</div>
-        </li>
-        <li>
-          <div className="create-event">Create event</div>
-        </li>
-      </ul>
+      <a href="#" className="logo">
+        Event
+      </a>
+      <div className="nav-links">
+        <ul>
+          <li>
+            <a href="#" className="login-btn">
+              Login
+            </a>
+          </li>
+          <li>
+            <a href="#" className="create-event-btn">
+              Create event
+            </a>
+          </li>
+        </ul>
+      </div>
       <AiOutlineMenu className="icon-menu" />
     </nav>
   );
