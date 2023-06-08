@@ -1,15 +1,17 @@
 .footer-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "overlap";
   background-color: #10375c;
   width: auto;
   height: auto;
 }
 
 .footer {
-  display: flex;
-  flex-direction: row;
+  grid-area: overlap;
+  align-self: center;
+  justify-self: center;
   flex-wrap: wrap;
   justify-content: space-between;
   line-height: 1.5;
@@ -21,6 +23,64 @@
   padding-bottom: 6rem;
   border: 2px solid #ff5722;
 }
+
+/* --------------------------------Mobile footer end  */
+
+.footer-mobile {
+  grid-area: overlap;
+  align-self: center;
+  justify-self: center;
+  /* line-height: 1.5; */
+  width: 80%;
+  height: 100%;
+  /* background-color: #4e5256; */
+  color: #fff;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  border: 2px solid #05f158;
+}
+
+.footer-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-mobile h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.footer-mobile a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.m-footer-row-event {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  height: auto;
+  /* border: 2px solid #fff; */
+}
+
+.m-hr {
+  /* color: rgb(119, 8, 8); */
+  border: none;
+  background-color: rgba(208, 213, 221, 0.3);
+  width: 100%;
+  height: .2px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+/* --------------------------------Mobile footer end  */
 
 .footer h2 {
   font-size: 16px;
@@ -83,7 +143,7 @@
   grid-area: overlap;
   align-self: center;
   justify-self: end;
-  position: absolute;
+  /* position: absolute; */
   color: #ff5722;
   font-size: 18px;
   margin-right: 11px;
@@ -123,7 +183,7 @@
 
 @media screen and (max-width: 640px) {
   .footer {
-    display: flex;
+    display: none;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -146,7 +206,7 @@
   }
 
   .footer-email-form {
-    display: flex;
+    display: none;
     flex-direction: column;
   }
 

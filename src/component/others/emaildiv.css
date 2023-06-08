@@ -1,0 +1,50 @@
+.m-email-div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "overlap";
+  /* width: 343px; */
+  height: 70px;
+
+  /* border: 2px solid #ff5722; */
+  padding: 0;
+}
+
+#m-footer-email {
+  grid-area: overlap;
+  align-self: center;
+  justify-self: center;
+  width: 255px;
+  height: 70px;
+  border: none;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-left: 11px;
+  color: #fff;
+  appearance: none;
+  outline: none;
+}
+
+#m-footer-email::placeholder {
+  color: #fff;
+}
+
+.m-send-icon {
+  grid-area: overlap;
+  align-self: center;
+  justify-self: end;
+  /* position: absolute; */
+  color: #ff5722;
+  font-size: 18px;
+  /* margin-right: 11px; */
+}
+
+@media screen and (max-width: 640px) {
+  .m-email-div {
+    height: 40px;
+  }
+  #m-footer-email {
+    width: 100%;
+    height: 40px;
+  }
+}

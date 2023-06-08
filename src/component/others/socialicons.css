@@ -1,0 +1,18 @@
+.m-social-icons {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100%;
+}
+.m-icon {
+  display: flex;
+  font-size: 18px;
+  margin-right: 25px;
+}
+
+@media screen and (max-width: 640px) {
+  
+  .m-icons {
+    font-size: 13px;
+  }
+}

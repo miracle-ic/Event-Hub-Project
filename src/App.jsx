@@ -2,12 +2,8 @@ import React from 'react'
 import './App.css'
 // import Home from './component/pages/Home'
 import Login from './component/pages/Login'
-import Home from './component/pages/Home'
-import Navbar from './component/Navbar/Navbar'
-import Footer from './component/Footer/Footer'
-import Navbar2 from './component/others/Navbar2'
 import Footer2 from './component/others/Footer2'
-import TicketModel from './component/Ticket-Model/TicketModel'
+import Emaildiv from './component/others/Emaildiv'
 
 
 const App = () => {
@@ -16,6 +12,7 @@ const App = () => {
     <>
       {/* <Home /> */}
       <Footer2 />
+      {/* <Emaildiv /> */}
       {/* <Footer /> */}
     </>
     

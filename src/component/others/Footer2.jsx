@@ -5,6 +5,8 @@ import { BsDribbble } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
 import "./footer2.css";
+import Emaildiv from "./Emaildiv";
+import Socialicons from "./Socialicons";
 
 const Footer = () => {
   return (
@@ -14,20 +16,7 @@ const Footer = () => {
           <h2>Event</h2>
           <a href="#">Copyright events</a>
           <a href="#">All rights reserved.</a>
-          <div className="social-icons">
-            <a href="#">
-              <BsInstagram className="icon" />
-            </a>
-            <a href="#">
-              <BsDribbble className="icon" />
-            </a>
-            <a href="#">
-              <BsTwitter className="icon" />
-            </a>
-            <a href="#">
-              <BsYoutube className="icon" />
-            </a>
-          </div>
+          <Socialicons/>
         </div>
 
         <div className="footer-row1">
@@ -48,17 +37,28 @@ const Footer = () => {
 
         <div className="footer-email-form">
           <h2>Stay up to date</h2>
-          <div className="email-div">
-            <input
-              type="email"
-              placeholder="Your email address"
-              id="footer-email"
-            />
-            <FiSend className="send-icon" />
-          </div>
-        </div>
+          <Emaildiv />
+        </div>        
+      </div>
 
-        
+{/* ----------------------------------- */}
+      <div className="footer-mobile">
+        <div className="m-footer-row-event">
+            <h2>Event</h2>
+            <a href="#">Company</a>
+            <a href="#">Support</a>
+            <a href="#">Stay up to date</a>
+        </div>
+          <Emaildiv />
+          <div className="m-hr"></div>
+          <div>
+            <div className="m-footer-copyright">
+              jsdhsd
+            </div>
+            <div className="m-footer-logo">
+              <Socialicons/>
+            </div>
+          </div>
       </div>
     </div>
   );
