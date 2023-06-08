@@ -6,7 +6,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { MdArrowDropDown } from "react-icons/md";
 import { HiArrowRight } from "react-icons/hi";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import Navbar2 from '../others/Navbar2'
+
 import "./home.css";
 
 const Home = () => {
@@ -42,7 +42,7 @@ const Home = () => {
           {/* -----------------------------------------------------Location */}
           <label class="location-event-div">
             <h2>Location</h2>
-            <div class="location-div">
+            <div className="location-div">
               <select name="city" id="location-input">
                 <option value="Lagos">Lagos, Nigeria</option>
                 <option value="Abia">Abia</option>
