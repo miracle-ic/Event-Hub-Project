@@ -12,7 +12,8 @@
 
 @media screen and (max-width: 640px) {
   
-  .m-icons {
+  .m-icon {
     font-size: 13px;
+    margin-right: 15px;
   }
 }

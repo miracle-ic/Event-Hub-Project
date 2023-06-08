@@ -1,9 +1,6 @@
 import React from 'react';
-import { FiSend } from "react-icons/fi";
-import { BsInstagram } from "react-icons/bs";
-import { BsDribbble } from "react-icons/bs";
-import { BsTwitter } from "react-icons/bs";
-import { BsYoutube } from "react-icons/bs";
+import Socialicons from '../others/Socialicons';
+import Emaildiv from '../others/Emaildiv';
 import "./footer.css";
 
 const Footer = () => {
@@ -14,13 +11,9 @@ const Footer = () => {
           <h2>Event</h2>
           <a href="#">Copyright events</a>
           <a href="#">All rights reserved.</a>
-          <div className="social-icons">
-          <a href="#"><BsInstagram className="icon" /></a>
-          <a href="#"><BsDribbble className="icon" /></a>
-          <a href="#"><BsTwitter className="icon" /></a>
-          <a href="#"><BsYoutube className="icon" /></a>
-          </div>
+          <Socialicons/>
         </div>
+
         <div className="footer-row1">
           <h2>Company</h2>
           <a href="#">About us</a>
@@ -28,6 +21,7 @@ const Footer = () => {
           <a href="#">Contact us</a>
           <a href="#">Testimonials</a>
         </div>
+
         <div className="footer-row1">
           <h2>Support</h2>
           <a href="#">Help center</a>
@@ -35,17 +29,32 @@ const Footer = () => {
           <a href="#">Legal</a>
           <a href="#">Privacy policy</a>
         </div>
+
         <div className="footer-email-form">
           <h2>Stay up to date</h2>
-          <div className="email-div">
-            <input
-              type="email"
-              placeholder="Your email address"
-              id="footer-email"
-            />
-            <FiSend className="send-icon" />
-          </div>
+          <Emaildiv />
+        </div>        
+      </div>
+
+{/* ----------------------------------- */}
+      <div className="footer-mobile">
+        <div className="m-footer-row-event">
+            <h2>Event</h2>
+            <a href="#">Company</a>
+            <a href="#">Support</a>
+            <a href="#">Stay up to date</a>
         </div>
+          <Emaildiv />
+          <div className="m-hr"></div>
+          <div className="m-bottom-footer">
+            <div className="m-footer-copyright">
+            <a href="#">All rights reserved.</a>
+            <a href="#">Copyright events</a>
+            </div>
+            <div className="m-footer-logo">
+              <Socialicons/>
+            </div>
+          </div>
       </div>
     </div>
   )

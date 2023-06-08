@@ -4,7 +4,7 @@
   grid-template-rows: 1fr;
   grid-template-areas: "overlap";
   /* width: 343px; */
-  height: 70px;
+  height: 40px;
 
   /* border: 2px solid #ff5722; */
   padding: 0;
@@ -15,7 +15,7 @@
   align-self: center;
   justify-self: center;
   width: 255px;
-  height: 70px;
+  height: 40px;
   border: none;
   border-radius: 7px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -40,11 +40,7 @@
 }
 
 @media screen and (max-width: 640px) {
-  .m-email-div {
-    height: 40px;
-  }
   #m-footer-email {
     width: 100%;
-    height: 40px;
   }
 }
