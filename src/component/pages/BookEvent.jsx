@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import TicketModel from "../Ticket-Model/TicketModel";
 import { CiCircleAlert } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
+import upload from '../others/upload.svg';
 
 const BookEvent = () => {
   return (
@@ -74,8 +75,12 @@ const BookEvent = () => {
 
               {/* -----------------------------------Upload Container - Div */}
               <div className="upload-container">
-                <p>Upload Event Banner</p>
+                <span className="span1">Upload Event Banner</span>
                 <div className="upload-line"></div>
+                <img src={upload} className="upload-icon" alt="upload icon" />
+                <span className="span1">Upload from file</span>
+                <span className="span2">or click here to drag image</span>
+                <span className="span3">PNG or JPG only</span>
               </div>
             </form>
           </div>
