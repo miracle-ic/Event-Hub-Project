@@ -52,7 +52,7 @@
     margin-bottom: 6%;
 }
 
-/* -------------------Login header */
+/* -------------------Event Book header */
 .event-book-header {
     display: flex;
     flex-direction: column;
@@ -282,10 +282,10 @@
 
 .upload-container .span3 {
     font-size: 14px;
-    margin-top: 10px;
     color: #252D42;
+    margin-top: 10px;
     opacity: 29%;
-    margin-bottom: 7%;
+    margin-bottom: 8%;
 }
 
 .upload-line {
@@ -304,6 +304,58 @@
     margin-top: 4%;
 }
 
+/* -------------------Set Location header */
+.set-location-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    margin-top: 7%;
+    /* border: 2px solid rgb(0, 4, 255); */
+}
+
+.set-location-header h2 {
+    font-size: 32px;
+    margin-top: -10px;
+}
+
+.set-location-header p {
+    font-size: 16px;
+    margin-top: -25px;
+}
+
+.location-btn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #252D42;
+}
+
+.online-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 197px;
+    height: 74px;
+    background-color: rgb(0, 50, 47, 0.05);
+    border-radius: 4px;
+    margin-right: 25px;
+}
+
+.venue-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 197px;
+    height: 74px;
+    background-color: #fff;
+    border: 1px solid rgb(0, 50, 47, 0.29);
+    border-radius: 4px;
+}
+
+
 @media screen and (max-width: 991px) {
     .upload-container .span1 {
         font-size: 19px;
@@ -316,6 +368,15 @@
 
     .upload-container .span2 {
         font-size: 14px;
+    }
+
+    .set-location-header h2 {
+        font-size: 22px;
+    }
+    
+    .set-location-header p {
+        font-size: 14px;
+        margin-top: -10px;
     }
 }
 
@@ -335,5 +396,29 @@
 
     .upload-container .span2 {
         display: none;
+    }
+
+    .set-location-header h2 {
+        font-size: 14px;
+        margin-top: -2px;
+    }
+    
+    .set-location-header p {
+        font-size: 14px;
+        margin-top: -8px;
+    }
+
+    .location-btn {
+        margin-top: 10px;
+    }
+
+    .online-btn {
+        width: 167px;
+        height: 59px;
+    }
+
+    .venue-btn {
+        width: 167px;
+        height: 59px;
     }
 }

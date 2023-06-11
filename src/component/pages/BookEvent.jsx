@@ -82,6 +82,16 @@ const BookEvent = () => {
                 <span className="span2">or click here to drag image</span>
                 <span className="span3">PNG or JPG only</span>
               </div>
+
+              {/* -----------------------------------Set Location Header - Div */}
+            <div className="set-location-header">
+              <h2>Location</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <div className="location-btn">
+                <div className="online-btn">Online</div>
+                <div className="venue-btn">Venue</div>
+              </div>
+            </div>
             </form>
           </div>
         </div>
