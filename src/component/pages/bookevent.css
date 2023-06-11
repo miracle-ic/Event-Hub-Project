@@ -1,0 +1,269 @@
+.event-book-container {
+    display: flex;
+    flex-direction: column;
+    width: vw;
+    height: 100%;
+    background-color: #F8F9FA;
+    border: 3px solid rgb(255, 0, 0);
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 3%;
+}
+
+.event-book-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    
+    border: 2px solid rgb(0, 255, 68);
+
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid rgb(0, 255, 68); */
+}
+
+.a-icon {
+    margin-right: 16px;
+    font-size: 40px;
+}
+
+.event-message-alert {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    min-height: 72px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #932F19;
+    background-color: #FEFBE8;
+    border: 2px solid #932F19;
+    border-radius: 6px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 6%;
+}
+
+/* -------------------Login header */
+.event-book-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 80px;
+    /* border: 2px solid rgb(0, 4, 255); */
+}
+
+.event-book-header h2 {
+    font-size: 32px;
+    margin-top: -10px;
+}
+
+.event-book-header p {
+    font-size: 16px;
+    margin-top: -25px;
+}
+
+.form-div {
+    width: 100%;
+}
+/* -------------------Login inputs */
+.event-title-input-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "overlap";
+    margin-top: 60px;
+    width: 100%;
+}
+
+#event-title-input {
+    grid-area: overlap;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    height: 70px;
+    background-color: #F8F9FA;
+    border: 1px solid rgba(37,45,66,0.3);
+    border-radius: 7px;
+    color: #252D42;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    appearance: none;
+    outline: none;
+}
+
+.title-label {
+    grid-area: overlap;
+    align-self: start;
+    justify-self: start;
+    color: #252D42;
+    background-color: #F8F9FA;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 40px;
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+/* -------------------Password inputs */
+.event-organizer-input-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "overlap";
+    margin-top: 30px;
+    /* border: 3px solid rgb(255, 0, 0); */
+}
+
+#event-organizer-input {
+    grid-area: overlap;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    height: 70px;
+    background-color: #F8F9FA;
+    border: 1px solid rgba(37,45,66,0.3);
+    border-radius: 7px;
+    color: #252D42;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* appearance: none; */
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.organizer-label {
+    grid-area: overlap;
+    align-self: start;
+    justify-self: start;
+    color: #252D42;
+    background-color: #F8F9FA;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 40px;
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+/* ----------------------event modal Input */  
+.event-modals {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 100%;
+    /* border: 3px solid rgb(255, 0, 0); */
+}
+
+.ticket-modal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "overlap";
+    /* margin-top: 30px; */
+    width: auto;
+    /* border: 3px solid rgb(124, 153, 250); */
+}
+
+#ticket-input {
+    grid-area: overlap;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    height: 70px;
+    background-color: #F8F9FA;
+    border: 1px solid rgba(37,45,66,0.3);
+    border-radius: 7px;
+    color: #252D42;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    appearance: none;
+    outline: none;
+}
+
+.ticket-label {
+    grid-area: overlap;
+    align-self: start;
+    justify-self: start;
+    color: #252D42;
+    background-color: #F8F9FA;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 40px;
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+.arrow-down-icon {
+    grid-area: overlap;
+    align-self: center;
+    justify-self: end;
+    position: absolute;
+    color: #000;
+    font-size: 24px;
+    margin-right: 34px;
+}
+
+.category-modal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "overlap";
+    /* margin-top: 30px; */
+    width: auto;
+    /* border: 3px solid rgb(103, 127, 249); */
+}
+
+#category-input {
+    grid-area: overlap;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    height: 70px;
+    background-color: #F8F9FA;
+    border: 1px solid rgba(37,45,66,0.3);
+    border-radius: 7px;
+    color: #252D42;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    appearance: none;
+    outline: none;
+}
+
+.category-label {
+    grid-area: overlap;
+    align-self: start;
+    justify-self: start;
+    color: #252D42;
+    background-color: #F8F9FA;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 40px;
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+/* ----------------------Upload Container div */  
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 212px;
+    max-height: 485px;
+    
+    background-color: rgb(0, 0, 0, 0.03);
+    border: 1px solid #979797;
+    margin-top: 30px;
+}
