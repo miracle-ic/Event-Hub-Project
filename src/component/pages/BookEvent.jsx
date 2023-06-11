@@ -4,7 +4,8 @@ import Navbar from "../Navbar/Navbar";
 import TicketModel from "../Ticket-Model/TicketModel";
 import { CiCircleAlert } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
-import upload from '../others/upload.svg';
+import { FaCalendarAlt } from "react-icons/fa";
+import upload from "../others/upload.svg";
 
 const BookEvent = () => {
   return (
@@ -84,14 +85,69 @@ const BookEvent = () => {
               </div>
 
               {/* -----------------------------------Set Location Header - Div */}
-            <div className="set-location-header">
-              <h2>Location</h2>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-              <div className="location-btn">
-                <div className="online-btn">Online</div>
-                <div className="venue-btn">Venue</div>
+              <div className="set-location-header">
+                <h2>Location</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div className="location-btn">
+                  <div className="online-btn">Online</div>
+                  <div className="venue-btn">Venue</div>
+                </div>
               </div>
-            </div>
+
+              {/* -----------------------------------Save button - Div */}
+              <div className="set-date-time-header">
+                <h2>Date & Time</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                <div className="date-container">
+                  <div className="start-date-btn">
+                  <FaCalendarAlt className="calendar-icon" />
+                    <div className="date-input-div">
+                      <input type="text" id="event-start-input" placeholder="DD/MM/YYYY" />
+                      <label for="event-start-input" class="event-start-label">
+                        Event Starts
+                      </label>
+                    </div>
+                  </div>
+
+                  <div className="end-date-btn">
+                  <FaCalendarAlt className="calendar-icon" />
+                    <div className="date-input-div">
+                      <input type="text" id="event-start-input" placeholder="DD/MM/YYYY" />
+                      <label for="event-start-input" class="event-start-label">
+                        Event Ends
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="date-container">
+                  <div className="start-date-btn">
+                  <FaCalendarAlt className="calendar-icon" />
+                    <div className="date-input-div">
+                      <input type="text" id="event-start-input" placeholder="00:00AM" />
+                      <label for="event-start-input" class="event-start-label">
+                        Start Time
+                      </label>
+                    </div>
+                  </div>
+
+                  <div className="end-date-btn">
+                  <FaCalendarAlt className="calendar-icon" />
+                    <div className="date-input-div">
+                      <input type="text" id="event-start-input" placeholder="00:00PM" />
+                      <label for="event-start-input" class="event-start-label">
+                        End Time
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* -----------------------------------Save button - Div */}
+              <button type="" class="btn-save">
+                Save & Continue
+              </button>
             </form>
           </div>
         </div>

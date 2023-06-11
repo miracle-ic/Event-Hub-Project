@@ -75,7 +75,7 @@
 .form-div {
     width: 100%;
 }
-/* -------------------Login inputs */
+/* -------------------Event Title inputs */
 .event-title-input-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -115,7 +115,7 @@
     font-size: 16px;
 }
 
-/* -------------------Password inputs */
+/* -------------------Event Organizers inputs */
 .event-organizer-input-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -355,6 +355,125 @@
     border-radius: 4px;
 }
 
+/* -------------------Set Date & Time header */
+.set-date-time-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    margin-top: 7%;
+    /* border: 2px solid rgb(0, 4, 255); */
+}
+
+.set-date-time-header h2 {
+    font-size: 32px;
+    margin-top: -10px;
+}
+
+.set-date-time-header p {
+    font-size: 16px;
+    margin-top: -25px;
+}
+
+.date-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #252D42;
+}
+
+/* ------------------------------div 1 */
+.start-date-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 347px;
+    height: 74px;
+    background-color: #fff;
+    border: 1px solid rgb(0, 50, 47, 0.29);
+    border-radius: 4px;
+    margin-right: 25px;
+}
+
+/* -------------------Event Title inputs */
+.calendar-icon {
+    font-size: 24px;
+    color: #676767;
+}
+
+
+.date-input-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "overlap";
+    /* margin-top: 60px; */
+    width: auto;
+    margin-left: 15px;
+}
+
+#event-start-input {
+    font-family: 'Manrope';
+    font-weight: bold;
+    grid-area: overlap;
+    align-self: center;
+    justify-self: center;
+    width: 120px;
+    height: auto;
+    background-color: #ffffff;
+    /* border: 1px solid rgba(37,45,66,0.3); */
+    border-radius: 7px;
+    color: #252D42;
+    font-size: 16px;
+    padding-top: 22px;
+    padding-left: 4px;
+    border: none;
+    appearance: none;
+    outline: none;
+}
+
+.event-start-label {
+    grid-area: overlap;
+    align-self: start;
+    justify-self: start;
+    color: rgb(37, 45, 66, 0.8);
+    /* background-color: #ffffff; */
+    padding-left: 5px;
+    padding-right: 5px;
+    /* margin-left: 40px; */
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+
+/* -----------------------------------div 2 */
+.end-date-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 347px;
+    height: 74px;
+    background-color: #fff;
+    border: 1px solid rgb(0, 50, 47, 0.29);
+    border-radius: 4px;
+}
+
+/* -------------------Save button */
+.btn-save {
+    width: 100%;
+    height: 72px;
+    background-color: #FF5722;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 
 @media screen and (max-width: 991px) {
     .upload-container .span1 {
@@ -420,5 +539,10 @@
     .venue-btn {
         width: 167px;
         height: 59px;
+    }
+
+    .btn-save {
+        font-size: 14px;
+        height: 51px;
     }
 }
