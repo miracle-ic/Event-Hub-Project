@@ -1,10 +1,28 @@
+.m-logo {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.m-logo a {
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+  }
+
 .event-book-container {
     display: flex;
     flex-direction: column;
     width: vw;
     height: 100%;
     background-color: #F8F9FA;
-    border: 3px solid rgb(255, 0, 0);
+    /* border: 3px solid rgb(255, 0, 0); */
     padding-left: 7%;
     padding-right: 7%;
     padding-top: 3%;
@@ -16,7 +34,7 @@
     width: 100%;
     height: auto;
     
-    border: 2px solid rgb(0, 255, 68);
+    /* border: 2px solid rgb(0, 255, 68); */
 
 }
 
@@ -69,7 +87,7 @@
 
 .event-book-header p {
     font-size: 16px;
-    margin-top: -25px;
+    margin-top: -15px;
 }
 
 .form-div {
@@ -489,6 +507,19 @@
         font-size: 14px;
     }
 
+    .event-title-input-container {
+        margin-top: 40px;
+    }
+
+    .event-book-header h2 {
+        font-size: 24px;
+    }
+    
+    .event-book-header p {
+        font-size: 14px;
+        margin-top: -10px;
+    }
+
     .set-location-header h2 {
         font-size: 22px;
     }
@@ -497,9 +528,44 @@
         font-size: 14px;
         margin-top: -10px;
     }
+
+    .set-date-time-header h2 {
+        font-size: 22px;
+    }
+    
+    .set-date-time-header p {
+        font-size: 14px;
+        margin-top: -10px;
+    }
 }
 
 @media screen and (max-width: 767px) {
+    .header {
+        display: none;
+    }
+
+    .m-logo {
+        display: flex;
+    }
+
+    .event-message-alert {
+        display: none;
+    }
+
+    .event-book-header h2 {
+        font-size: 24px;
+        margin-top: 0px;
+    }
+    
+    .event-book-header p {
+        font-size: 14px;
+        margin-top: -8px;
+    }
+
+    .event-title-input-container {
+        margin-top: 30px;
+    }
+
     .upload-container {
         border: 1px dashed #979797;
     }
@@ -527,6 +593,16 @@
         margin-top: -8px;
     }
 
+    .set-date-time-header h2 {
+        font-size: 14px;
+        margin-top: -2px;
+    }
+    
+    .set-date-time-header p {
+        font-size: 14px;
+        margin-top: -8px;
+    }
+
     .location-btn {
         margin-top: 10px;
     }
@@ -544,5 +620,9 @@
     .btn-save {
         font-size: 14px;
         height: 51px;
+    }
+
+    .p-footer {
+        display: none;
     }
 }

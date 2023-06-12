@@ -1,6 +1,7 @@
 import React from "react";
 import "./bookevent.css";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer"
 import TicketModel from "../Ticket-Model/TicketModel";
 import { CiCircleAlert } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
@@ -10,12 +11,16 @@ import upload from "../others/upload.svg";
 const BookEvent = () => {
   return (
     <>
-      <Navbar />
+      <div className="header"><Navbar /></div>
       {/* -----------------------------------------------------event-book Container - Body */}
       <div className="event-book-container">
         {/* -----------------------------------event-book Details - Div */}
         <div className="event-book-details">
           <div className="book-details">
+            <div className="m-logo">
+                <a href="#" >Event</a>
+            </div>
+          
             <div className="event-message-alert">
               <CiCircleAlert className="a-icon" />
               <p>
@@ -152,6 +157,7 @@ const BookEvent = () => {
           </div>
         </div>
       </div>
+      <div className="p-footer"><Footer /></div>
     </>
   );
 };
