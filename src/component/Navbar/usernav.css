@@ -1,0 +1,121 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+  height: 90px;
+  padding: 0 7%;
+  background-color: #fff;
+  /* border: 1px solid rgb(226, 226, 226); */
+}
+
+.logo {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  /* border: 1px solid rgb(226, 226, 226); */
+}
+
+.nav-links ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  text-decoration: none;
+  gap: 15px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+}
+
+.user-avatar-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  color: #000;
+  /* border: 1px solid rgb(226, 226, 226); */
+}
+
+.user-avatar-div img {
+    clip-path: circle(50% at 50% 50%);
+    margin-right: 10px;
+}
+
+.user-arrow-icon {
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+.create-event-btn {
+  color: #fff;
+  /* width: 146px;
+      height: 504px; */
+  padding: 15px;
+  border-radius: 4px;
+  margin-left: 50px;
+  background-color: #ff5722;
+}
+
+.icon-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  margin-right: 7%;
+  /* font-size: 40px; */
+  /* background-color: aqua; */
+}
+
+@media screen and (max-width: 900px) {
+  .navbar .icon-menu {
+    display: block;
+  }
+  .navbar .logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+  /* .navbar .icon-menu {
+      display: block;
+      top: 25px;
+      right: 0px;
+    } */
+
+  .nav-links {
+    display: none;
+    top: 0;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 255, 255, 0.203);
+    backdrop-filter: blur(8px);
+    /* margin-left: -100%; */
+  }
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+  }
+}

@@ -1,17 +1,17 @@
 import React from "react";
 import "./bookevent.css";
-import Navbar from "../Navbar/Navbar";
+import Usernav from '../Navbar/Usernav'
 import Footer from "../Footer/Footer"
-import TicketModel from "../Ticket-Model/TicketModel";
 import { CiCircleAlert } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaCalendarAlt } from "react-icons/fa";
 import upload from "../others/upload.svg";
 
+
 const BookEvent = () => {
   return (
     <>
-      <div className="header"><Navbar /></div>
+      <div className="header"><Usernav /></div>
       {/* -----------------------------------------------------event-book Container - Body */}
       <div className="event-book-container">
         {/* -----------------------------------event-book Details - Div */}
