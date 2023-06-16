@@ -16,31 +16,36 @@
 }
 
 .ed-banner-content {
-    display: grid;
-    /* grid-gap: 7%; */
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
-    border: 2px solid #01a76f;
-}
-
-.ed-writeup-wrapper {
-    display: grid;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    height: 100%;
-    border: 5px solid #9c01a7;
-    margin-right: 6%;
+    /* border: 2px solid #01a76f; */
 }
 
 .ed-writeup-banner {
-    display: grid;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 525px;
     height: auto;
     color: #fff;
-    border: 2px solid #FF5722;
+    /* border: 2px solid #FF5722; */
+}
+
+.date-time-card {
+    display: flex;
+    flex-direction: column;
+    width: 412px;
+    height: 345px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+    /* border: 2px solid #e522ff; */
 }
 
 .ed-writeup-banner span {
@@ -50,33 +55,83 @@
 
 .ed-writeup-banner p {
     font-size: 24px;
+    font-weight: lighter;
     margin-top: 7%;
 }
 
-.date-time-div {
-    display: grid;
+.date-time-card span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+.date-time-card p {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.date-time-card a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FF5722;
+    appearance: none;
+    text-decoration: none;
+}
+
+.btn-buy-ticket {
     width: 100%;
-    border: 2px solid #2234ff;
-    justify-content: flex-end;
+    height: 54px;
+    background-color: #FF5722;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 13%;
 }
 
-
-.date-time-card {
-    display: grid;
-    width: 412px;
-    height: 345px;
-    background-color: #fff;
-    border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: 2px solid #FF5722;
+.btn-save-ticket {
+    width: 100%;
+    height: 54px;
+    background-color: #D9D1CE;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
 }
+
+.back {
+    display: flex;
+    flex-direction: row;
+    top: 150px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: auto;
+    position: absolute;
+    /* border: 2px solid #FF5722; */
+}
+
+.back a {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+
+.back-icon {
+    font-size: 24px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    /* border: 2px solid #22ff94; */
+}
+
 
 
 @media screen and (max-width: 1136px) {
-    .ed-writeup-banner {
+    .ed-banner-content .ed-writeup-banner {
         width: 425px;
     }
     .ed-writeup-banner span {
@@ -89,14 +144,23 @@
 }
 
 @media screen and (max-width: 991px) {
+
     .date-time-div {
         justify-content: flex-start;
+    }
+
+    .back {
+        display: none;
     }
 }
 
 @media screen and (max-width: 767px) {
+    .ed-banner-container {
+        padding-top: 1%;
+    }
     .ed-writeup-banner {
-        width: 325px;
+        max-width: 315px;
+        margin-bottom: 30px;
     }
     .ed-writeup-banner span {
         font-size: 32px;
@@ -109,5 +173,17 @@
     .date-time-card {
         width: 343px;
         height: 286px;
+    }
+
+    .date-time-card span {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    .date-time-card p {
+        font-size: 14px;
+        margin-top: 7px;
+    }
+    .date-time-card a {
+        font-size: 14px;
     }
 }
