@@ -4,7 +4,7 @@
     width: 100%;
     height: auto;
     background-color: #F8F9FA;
-    border: 3px solid #ff0;
+    /* border: 3px solid #ff0; */
 }
 
 .ed-banner-container {
@@ -328,10 +328,7 @@
     }
 
     /* --------------------------Banner Writeup div  */
-    .ed-writeup-banner {
-        max-width: 315px;
-        margin-bottom: 30px;
-    }
+    
     .ed-writeup-banner span {
         font-size: 32px;
     }
@@ -421,5 +418,12 @@
     }
     .span-other {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .ed-writeup-banner {
+        max-width: 315px;
+        margin-bottom: 30px;
     }
 }
