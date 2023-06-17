@@ -1,3 +1,12 @@
+.event-details-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #F8F9FA;
+    border: 3px solid #ff0;
+}
+
 .ed-banner-container {
     display: flex;
     flex-direction: column;
@@ -12,7 +21,7 @@
     padding-right: 7%;
     padding-top: 4%;
     padding-bottom: 4%;
-    border: 2px solid #a74601;
+    /* border: 2px solid #a74601; */
 }
 
 .ed-banner-content {
@@ -128,6 +137,161 @@
     /* border: 2px solid #22ff94; */
 }
 
+/* --------------------------Des & Location div  */
+.details-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    width: 100%;
+    /* border: 2px solid #fb22ff; */
+}
+
+.des-loc-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 45px;
+    min-width: 100%;
+    margin-bottom: 15px;
+    /* border: 2px solid #2c2d2d; */
+}
+
+/* --------------------------Des div  */
+.des-div {
+    display: flex;
+    flex-direction: column;
+    min-width: 343px;
+    /* border: 2px solid #22ff94; */
+}
+
+.des-div .span-des {
+    font-size: 32px;
+    font-weight: bold;
+    color: #252D42;
+    margin-bottom: 5px;
+}
+
+.des-div .p-des {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #252D42;
+    line-height: 1.5rem;
+}
+
+
+/* --------------------------Location div  */
+.loc-div {
+    display: flex;
+    flex-direction: column;
+    width: 412px;
+    /* border: 2px solid #22ff94; */
+}
+
+.loc-div .span-loc {
+    font-size: 32px;
+    font-weight: bold;
+    color: #252D42;
+    margin-bottom: 25px;
+}
+
+.img-loc {
+    background-image: url("https://res.cloudinary.com/dafxzu462/image/upload/v1685714325/map-image_qbwmeg.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 412px;
+    height: 385px;
+}
+
+.loc-div .span-share {
+    font-size: 32px;
+    font-weight: bold;
+    color: #252D42;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+/* --------------------------Date & Time div  */
+.date-time-wrapper .span-date-time {
+    font-size: 32px;
+    font-weight: bold;
+    color: #252D42;
+    margin-bottom: 25px;
+}
+
+.date-time-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #252D42;
+    max-width: 716px;
+    margin-top: 25px;
+}
+
+.span-dates {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.start-date-time p {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+/* --------------------------Contact div  */
+.contact-organizer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.span-organizer {
+    font-size: 32px;
+    font-weight: bold;
+    color: #252D42;
+}
+
+.contact-organizer p {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #252D42;
+    margin-top: 20px;
+}
+
+.contact-organizer p a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #FF5722;
+    
+}
+
+/* --------------------------Other Events div  */
+.other-events-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+
+.span-other {
+    font-size: 32px;
+    font-weight: bold;
+    color: #252D42;
+}
+
+.other-events {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+    margin-top: 25px;
+}
 
 
 @media screen and (max-width: 1136px) {
@@ -140,6 +304,10 @@
     
     .ed-writeup-banner p {
         font-size: 19px;
+    }
+
+    .des-loc-wrapper {
+        flex-wrap: wrap;
     }
 }
 
@@ -158,6 +326,8 @@
     .ed-banner-container {
         padding-top: 1%;
     }
+
+    /* --------------------------Banner Writeup div  */
     .ed-writeup-banner {
         max-width: 315px;
         margin-bottom: 30px;
@@ -169,6 +339,8 @@
     .ed-writeup-banner p {
         font-size: 14px;
     }
+
+    /* -------------Date & Time Card on banner div  */
 
     .date-time-card {
         width: 343px;
@@ -184,6 +356,70 @@
         margin-top: 7px;
     }
     .date-time-card a {
+        font-size: 14px;
+    }
+
+    /* --------------------------Des div  */
+    .des-loc-wrapper {
+        gap: 15px;
+    }
+    .des-div .span-des {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .des-div .p-des {
+        font-size: 14px;
+    }
+
+    /* --------------------------Location div  */
+    .loc-div .span-loc {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .img-loc {
+        width: 100%;
+        height: 208px;
+    }
+    .loc-div .span-share {
+        font-size: 14px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    /* --------------------------Date & Time div  */
+    .date-time-wrapper .span-date-time {
+        font-size: 14px;
+    }
+    
+    .date-time-container {
+        margin-top: 10px;
+    }
+    
+    .span-dates {
+        font-size: 14px;
+    }
+    
+    .start-date-time p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    /* --------------------------Contact Other div  */
+    .span-organizer {
+        font-size: 14px;
+        margin-top: -20px;
+    }
+    
+    .contact-organizer p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    /* --------------------------Other Event div  */
+    .other-events-wrapper {
+        margin-top: 15px;
+    }
+    .span-other {
         font-size: 14px;
     }
 }

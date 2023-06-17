@@ -1,0 +1,36 @@
+.c-social-icons {
+    display: flex;
+    /* margin-top: 10px; */
+    /* margin-left: 10px; */
+    width: 100%;
+  }
+  .c-social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #FF5722;
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 32px;
+    height: 32px;
+  }
+  .c-icon {
+    display: flex;
+    font-size: 18px;
+    color: #fff;
+    
+  }
+  
+  @media screen and (max-width: 767px) {
+    .c-social-icons a {
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+    }
+    
+    .c-icon {
+        font-size: 13px;
+    }
+  }
+  
