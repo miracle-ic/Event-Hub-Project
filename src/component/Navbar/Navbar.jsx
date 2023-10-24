@@ -1,13 +1,17 @@
 import React from "react";
 import "./navbar.css";
 import { AiOutlineMenu } from "react-icons/ai";
+import { LogoLink, MainContainer } from "../Styled/Styled";
 
 const Navbar = () => {
   return (
+    
     <nav className="navbar">
-      <a href="#" className="logo">
+      <MainContainer>
+      <div className="navwrap">
+      <LogoLink to="#">
         Event
-      </a>
+      </LogoLink>
       <div className="nav-links">
         <ul>
           <li>
@@ -23,7 +27,10 @@ const Navbar = () => {
         </ul>
       </div>
       <AiOutlineMenu className="icon-menu" />
+      </div>
+      </MainContainer>
     </nav>
+    
   );
 };
 

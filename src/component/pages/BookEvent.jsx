@@ -69,7 +69,7 @@ const BookEvent = () => {
                 </div>
 
                 <div className="category-modal">
-                  <select name="ticket" id="category-input">
+                  <select name="ticket" id="ticket-input">
                     <option value="Lagos"></option>
                   </select>
                   <label for="ticket-input" class="category-label">

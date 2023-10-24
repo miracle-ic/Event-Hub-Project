@@ -5,6 +5,7 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 import Socialiconscs from "../others/Socialiconscs";
 import Event from "../Event/Event";
 import Footer from "../Footer/Footer";
+import { MainContainer } from "../Styled/Styled";
 
 const Eventdetails = () => {
   return (
@@ -13,34 +14,40 @@ const Eventdetails = () => {
       <div className="event-details-container">
         {/* -----------------------------------Open Tag container */}
         <div className="ed-banner-container">
-          <div className="ed-banner-content">
-            <div className="ed-writeup-banner">
-              <span>Eko All Night Pool Party Festival</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
-                vivamus penatibus viverra aliquam diam.
-              </p>
+
+          <MainContainer>
+            {/* ---------wrap here */}
+            <div className="ed-banner-content">
+              <div className="ed-writeup-banner">
+                <span>Eko All Night Pool Party Festival</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                  vivamus penatibus viverra aliquam diam.
+                </p>
+              </div>
+              <div className="date-time-card">
+                <span>Date & Time</span>
+                <p>Saturday, Nov 06, 2021 at 20:30PM</p>
+                <a href="#">+ Add to Calender</a>
+                <button type="#" class="btn-buy-ticket">
+                  Buy Ticket
+                </button>
+                <button type="#" class="btn-save-ticket">
+                  Save Ticket
+                </button>
+              </div>
+              <div className="back">
+                <a href="#">
+                  <IoIosArrowRoundBack className="back-icon" /> Go Back
+                </a>
+              </div>
             </div>
-            <div className="date-time-card">
-              <span>Date & Time</span>
-              <p>Saturday, Nov 06, 2021 at 20:30PM</p>
-              <a href="#">+ Add to Calender</a>
-              <button type="#" class="btn-buy-ticket">
-                Buy Ticket
-              </button>
-              <button type="#" class="btn-save-ticket">
-                Save Ticket
-              </button>
-            </div>
-            <div className="back">
-              <a href="#">
-                <IoIosArrowRoundBack className="back-icon" /> Go Back
-              </a>
-            </div>
-          </div>
+            {/* --------------end banner content */}
+          </MainContainer>
         </div>
 
         <div className="details-container">
+          <MainContainer>
           <div className="des-loc-wrapper">
             <div className="des-div">
               <span className="span-des">Description</span>
@@ -118,13 +125,14 @@ const Eventdetails = () => {
           <div className="other-events-wrapper">
             <span className="span-other">Other event you might like</span>
             <div className="other-events">
-                <Event />
-                <Event />
-                <Event />
+              <Event />
+              <Event />
+              <Event />
             </div>
           </div>
 
           {/* ----------close details container */}
+          </MainContainer>
         </div>
         {/* -----------------------------------Close Tag container */}
       </div>

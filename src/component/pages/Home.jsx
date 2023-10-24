@@ -92,7 +92,7 @@ const Home = () => {
           <div className="date-event-div">
             <h2>When</h2>
             <div className="date-div">
-              <input type="date" placeholder="Any date" id="date-input" />
+              <input type="text" placeholder="Any date" id="date-input" />
               <MdArrowDropDown className="icon-date" />
             </div>
           </div>

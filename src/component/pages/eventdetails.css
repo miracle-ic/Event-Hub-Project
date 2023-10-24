@@ -1,429 +1,427 @@
 .event-details-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    background-color: #F8F9FA;
-    /* border: 3px solid #ff0; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: #f8f9fa;
+  /* border: 3px solid #ff0; */
 }
 
 .ed-banner-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url('https://res.cloudinary.com/dafxzu462/image/upload/v1685391122/wepik-bg-home-202305292011132LG0_vd0fco.png');
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    min-height: 628px;
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    /* border: 2px solid #a74601; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://res.cloudinary.com/dafxzu462/image/upload/v1685391122/wepik-bg-home-202305292011132LG0_vd0fco.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 628px;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  /* border: 2px solid #a74601; */
 }
 
 .ed-banner-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    /* border: 2px solid #01a76f; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  /* border: 2px solid #01a76f; */
 }
 
 .ed-writeup-banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 525px;
-    height: auto;
-    color: #fff;
-    /* border: 2px solid #FF5722; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 525px;
+  height: auto;
+  color: #fff;
+  /* border: 2px solid #FF5722; */
 }
 
 .date-time-card {
-    display: flex;
-    flex-direction: column;
-    width: 412px;
-    height: 345px;
-    background-color: #fff;
-    border-radius: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    /* padding-bottom: 20px; */
-    /* border: 2px solid #e522ff; */
+  display: flex;
+  flex-direction: column;
+  width: 412px;
+  height: 345px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  /* padding-bottom: 20px; */
+  /* border: 2px solid #e522ff; */
 }
 
 .ed-writeup-banner span {
-    font-size: 56px;
-    font-weight: bold;
+  font-size: 56px;
+  font-weight: bold;
 }
 
 .ed-writeup-banner p {
-    font-size: 24px;
-    font-weight: lighter;
-    margin-top: 7%;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-top: 7%;
 }
 
 .date-time-card span {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 3%;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 3%;
 }
 
 .date-time-card p {
-    font-size: 16px;
-    font-weight: lighter;
+  font-size: 16px;
+  font-weight: lighter;
 }
 
 .date-time-card a {
-    font-size: 16px;
-    font-weight: 600;
-    color: #FF5722;
-    appearance: none;
-    text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff5722;
+  appearance: none;
+  text-decoration: none;
 }
 
 .btn-buy-ticket {
-    width: 100%;
-    height: 54px;
-    background-color: #FF5722;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 13%;
+  width: 100%;
+  height: 54px;
+  background-color: #ff5722;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 13%;
 }
 
 .btn-save-ticket {
-    width: 100%;
-    height: 54px;
-    background-color: #D9D1CE;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 15px;
+  width: 100%;
+  height: 54px;
+  background-color: #d9d1ce;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
 }
 
 .back {
-    display: flex;
-    flex-direction: row;
-    top: 150px;
-    /* align-items: center; */
-    /* justify-content: center; */
-    height: auto;
-    position: absolute;
-    /* border: 2px solid #FF5722; */
+  display: flex;
+  flex-direction: row;
+  top: 150px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  height: auto;
+  position: absolute;
+  /* border: 2px solid #FF5722; */
 }
 
 .back a {
-    display: flex;
-    font-size: 18px;
-    font-weight: 500;
-    color: #fff;
-    text-decoration: none;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
 }
 
 .back-icon {
-    font-size: 24px;
-    font-weight: 900;
-    color: rgb(255, 255, 255);
-    /* border: 2px solid #22ff94; */
+  font-size: 24px;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  /* border: 2px solid #22ff94; */
 }
 
 /* --------------------------Des & Location div  */
 .details-container {
-    display: flex;
-    flex-direction: column;
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 8%;
-    padding-bottom: 8%;
-    width: 100%;
-    /* border: 2px solid #fb22ff; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  width: 100%;
+  /* border: 2px solid #fb22ff; */
 }
 
 .des-loc-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 45px;
-    min-width: 100%;
-    margin-bottom: 15px;
-    /* border: 2px solid #2c2d2d; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 45px;
+  min-width: 100%;
+  margin-bottom: 15px;
+  /* border: 2px solid #2c2d2d; */
 }
 
 /* --------------------------Des div  */
 .des-div {
-    display: flex;
-    flex-direction: column;
-    min-width: 343px;
-    /* border: 2px solid #22ff94; */
+  display: flex;
+  flex-direction: column;
+  min-width: 343px;
+  /* border: 2px solid #22ff94; */
 }
 
 .des-div .span-des {
-    font-size: 32px;
-    font-weight: bold;
-    color: #252D42;
-    margin-bottom: 5px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #252d42;
+  margin-bottom: 5px;
 }
 
 .des-div .p-des {
-    font-size: 16px;
-    font-weight: lighter;
-    color: #252D42;
-    line-height: 1.5rem;
+  font-size: 16px;
+  font-weight: lighter;
+  color: #252d42;
+  line-height: 1.5rem;
 }
-
 
 /* --------------------------Location div  */
 .loc-div {
-    display: flex;
-    flex-direction: column;
-    width: 412px;
-    /* border: 2px solid #22ff94; */
+  display: flex;
+  flex-direction: column;
+  width: 412px;
+  /* border: 2px solid #22ff94; */
 }
 
 .loc-div .span-loc {
-    font-size: 32px;
-    font-weight: bold;
-    color: #252D42;
-    margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #252d42;
+  margin-bottom: 25px;
 }
 
 .img-loc {
-    background-image: url("https://res.cloudinary.com/dafxzu462/image/upload/v1685714325/map-image_qbwmeg.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 412px;
-    height: 385px;
+  background-image: url("https://res.cloudinary.com/dafxzu462/image/upload/v1685714325/map-image_qbwmeg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 412px;
+  height: 385px;
 }
 
 .loc-div .span-share {
-    font-size: 32px;
-    font-weight: bold;
-    color: #252D42;
-    margin-top: 50px;
-    margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #252d42;
+  margin-top: 50px;
+  margin-bottom: 25px;
 }
 
 /* --------------------------Date & Time div  */
 .date-time-wrapper .span-date-time {
-    font-size: 32px;
-    font-weight: bold;
-    color: #252D42;
-    margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #252d42;
+  margin-bottom: 25px;
 }
 
 .date-time-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: #252D42;
-    max-width: 716px;
-    margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #252d42;
+  max-width: 716px;
+  margin-top: 25px;
 }
 
 .span-dates {
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .start-date-time p {
-    font-size: 16px;
-    font-weight: lighter;
-    margin-top: 10px;
+  font-size: 16px;
+  font-weight: lighter;
+  margin-top: 10px;
 }
 
 /* --------------------------Contact div  */
 .contact-organizer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 25px;
 }
 
 .span-organizer {
-    font-size: 32px;
-    font-weight: bold;
-    color: #252D42;
+  font-size: 32px;
+  font-weight: bold;
+  color: #252d42;
 }
 
 .contact-organizer p {
-    font-size: 16px;
-    font-weight: lighter;
-    color: #252D42;
-    margin-top: 20px;
+  font-size: 16px;
+  font-weight: lighter;
+  color: #252d42;
+  margin-top: 20px;
 }
 
 .contact-organizer p a {
-    font-weight: 500;
-    text-decoration: none;
-    color: #FF5722;
-    
+  font-weight: 500;
+  text-decoration: none;
+  color: #ff5722;
 }
 
 /* --------------------------Other Events div  */
 .other-events-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
 }
 
 .span-other {
-    font-size: 32px;
-    font-weight: bold;
-    color: #252D42;
+  font-size: 32px;
+  font-weight: bold;
+  color: #252d42;
 }
 
 .other-events {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 25px;
-    width: 100%;
-    margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 100%;
+  margin-top: 25px;
 }
 
-
 @media screen and (max-width: 1136px) {
-    .ed-banner-content .ed-writeup-banner {
-        width: 425px;
-    }
-    .ed-writeup-banner span {
-        font-size: 44px;
-    }
-    
-    .ed-writeup-banner p {
-        font-size: 19px;
-    }
+  .ed-banner-content .ed-writeup-banner {
+    width: 425px;
+  }
+  .ed-writeup-banner span {
+    font-size: 44px;
+  }
 
-    .des-loc-wrapper {
-        flex-wrap: wrap;
-    }
+  .ed-writeup-banner p {
+    font-size: 19px;
+  }
+
+  .des-loc-wrapper {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 991px) {
+  .date-time-div {
+    justify-content: flex-start;
+  }
 
-    .date-time-div {
-        justify-content: flex-start;
-    }
-
-    .back {
-        display: none;
-    }
+  .back {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .ed-banner-container {
-        padding-top: 1%;
-    }
+  .ed-banner-container {
+    padding-top: 1%;
+  }
 
-    /* --------------------------Banner Writeup div  */
-    
-    .ed-writeup-banner span {
-        font-size: 32px;
-    }
-    
-    .ed-writeup-banner p {
-        font-size: 14px;
-    }
+  /* --------------------------Banner Writeup div  */
 
-    /* -------------Date & Time Card on banner div  */
+  .ed-writeup-banner span {
+    font-size: 32px;
+  }
 
-    .date-time-card {
-        width: 343px;
-        height: 286px;
-    }
+  .ed-writeup-banner p {
+    font-size: 14px;
+  }
 
-    .date-time-card span {
-        font-size: 16px;
-        margin-bottom: 0px;
-    }
-    .date-time-card p {
-        font-size: 14px;
-        margin-top: 7px;
-    }
-    .date-time-card a {
-        font-size: 14px;
-    }
+  /* -------------Date & Time Card on banner div  */
 
-    /* --------------------------Des div  */
-    .des-loc-wrapper {
-        gap: 15px;
-    }
-    .des-div .span-des {
-        font-size: 14px;
-        margin-bottom: 5px;
-    }
-    .des-div .p-des {
-        font-size: 14px;
-    }
+  .date-time-card {
+    width: 343px;
+    height: 286px;
+  }
 
-    /* --------------------------Location div  */
-    .loc-div .span-loc {
-        font-size: 14px;
-        margin-bottom: 15px;
-    }
-    .img-loc {
-        width: 100%;
-        height: 208px;
-    }
-    .loc-div .span-share {
-        font-size: 14px;
-        margin-top: 25px;
-        margin-bottom: 10px;
-    }
+  .date-time-card span {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  .date-time-card p {
+    font-size: 14px;
+    margin-top: 7px;
+  }
+  .date-time-card a {
+    font-size: 14px;
+  }
 
-    /* --------------------------Date & Time div  */
-    .date-time-wrapper .span-date-time {
-        font-size: 14px;
-    }
-    
-    .date-time-container {
-        margin-top: 10px;
-    }
-    
-    .span-dates {
-        font-size: 14px;
-    }
-    
-    .start-date-time p {
-        font-size: 14px;
-        margin-top: 10px;
-    }
+  /* --------------------------Des div  */
+  .des-loc-wrapper {
+    gap: 15px;
+  }
+  .des-div .span-des {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .des-div .p-des {
+    font-size: 14px;
+  }
 
-    /* --------------------------Contact Other div  */
-    .span-organizer {
-        font-size: 14px;
-        margin-top: -20px;
-    }
-    
-    .contact-organizer p {
-        font-size: 14px;
-        margin-top: 10px;
-    }
+  /* --------------------------Location div  */
+  .loc-div .span-loc {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .img-loc {
+    width: 100%;
+    height: 208px;
+  }
+  .loc-div .span-share {
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
 
-    /* --------------------------Other Event div  */
-    .other-events-wrapper {
-        margin-top: 15px;
-    }
-    .span-other {
-        font-size: 14px;
-    }
+  /* --------------------------Date & Time div  */
+  .date-time-wrapper .span-date-time {
+    font-size: 14px;
+  }
+
+  .date-time-container {
+    margin-top: 10px;
+  }
+
+  .span-dates {
+    font-size: 14px;
+  }
+
+  .start-date-time p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  /* --------------------------Contact Other div  */
+  .span-organizer {
+    font-size: 14px;
+    margin-top: -20px;
+  }
+
+  .contact-organizer p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  /* --------------------------Other Event div  */
+  .other-events-wrapper {
+    margin-top: 15px;
+  }
+  .span-other {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 760px) {
-    .ed-writeup-banner {
-        max-width: 315px;
-        margin-bottom: 30px;
-    }
+  .ed-writeup-banner {
+    max-width: 315px;
+    margin-bottom: 30px;
+  }
 }
