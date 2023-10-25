@@ -113,6 +113,7 @@ const Home = () => {
 
         {/* -----------------------------------------------------Next Session */}
         {/* ---------------------------------------Upcoming Event */}
+        <Reveal>
         <div className="upcoming-event">
           {/* --------------------------------Header - Upcoming Event */}
           <div className="header-upcoming-event">
@@ -154,6 +155,7 @@ const Home = () => {
           {/* --------------------------------Events - Upcoming Event */}
           <div className="load-more-events">Load More Events</div>
         </div>
+        </Reveal>
       </div>
       <Footer />
     </>
