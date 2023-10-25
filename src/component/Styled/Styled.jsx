@@ -26,3 +26,8 @@ export const LogoLink = styled(NavLink)`
     color: #000;
     text-decoration: none;
 `;
+
+export const LoginLink = styled(NavLink)`
+    text-decoration: none;
+    color: #000;
+`;

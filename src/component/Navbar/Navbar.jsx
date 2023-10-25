@@ -1,7 +1,7 @@
 import React from "react";
 import "./navbar.css";
 import { AiOutlineMenu } from "react-icons/ai";
-import { LogoLink, MainContainer } from "../Styled/Styled";
+import { LoginLink, LogoLink, MainContainer } from "../Styled/Styled";
 
 const Navbar = () => {
   return (
@@ -15,9 +15,9 @@ const Navbar = () => {
       <div className="nav-links">
         <ul>
           <li>
-            <a href="#" className="login-btn">
+            <LoginLink to="/login">
               Login
-            </a>
+            </LoginLink>
           </li>
           <li>
             <a href="#" className="create-event-btn">
