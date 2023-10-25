@@ -8,6 +8,7 @@ import { HiArrowRight } from "react-icons/hi";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 import "./home.css";
+import { MainContainer } from "../Styled/Styled";
 
 const Home = () => {
   return (
@@ -40,7 +41,7 @@ const Home = () => {
           </div>
 
           {/* -----------------------------------------------------Location */}
-          <label class="location-event-div">
+          <div class="location-event-div">
             <h2>Location</h2>
             <div className="location-div">
               <select name="city" id="location-input">
@@ -82,7 +83,7 @@ const Home = () => {
               </select>
               <MdArrowDropDown class="icon-location" />
             </div>
-          </label>
+          </div>
 
           {/* -----------------------
 
@@ -109,20 +110,25 @@ const Home = () => {
             <h2>Upcoming Event</h2>
             {/* ------------------------Filter div */}
             <div className="filter-upcoming-event">
+
               <div className="filter-category-div">
                 <select name="city" id="category-input">
                   <option value="Category">All Category</option>
                 </select>
                 <MdKeyboardArrowDown class="icon-filter" />
               </div>
+
               <div className="filter-event-type-div">
                 <select name="city" id="event-type-input">
                   <option value="Event Type">Event Type</option>
                 </select>
                 <MdKeyboardArrowDown class="icon-filter" />
               </div>
+              
             </div>
           </div>
+
+          <MainContainer>
           <div className="event-container">
             {/* --------------------------------Events - Upcoming Event */}
             <Event />
@@ -135,6 +141,7 @@ const Home = () => {
             <Event />
             <Event />
           </div>
+          </MainContainer>
           {/* --------------------------------Events - Upcoming Event */}
           <div className="load-more-events">Load More Events</div>
         </div>
