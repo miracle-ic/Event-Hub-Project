@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="navbar">
       <MainContainer>
       <div className="navwrap">
-      <LogoLink to="#">
+      <LogoLink to="/home">
         Event
       </LogoLink>
       <div className="nav-links">
