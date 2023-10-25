@@ -9,6 +9,8 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 
 import "./home.css";
 import { MainContainer } from "../Styled/Styled";
+import Reveal from "../Reveal/Reveal";
+import RevealAppear from "../Reveal/RevealAppear";
 
 const Home = () => {
   return (
@@ -16,10 +18,17 @@ const Home = () => {
       <Navbar />
       <div className="home-banner">
         <div className="center-text">
-          <p>Connect to all the event happening around you</p>
+          <Reveal>
+            <p>Connect to all the event happening around you</p>
+          </Reveal>
           <div className="banner-explore">
+            <RevealAppear>
             <h2>Explore More</h2>
+            </RevealAppear>
+            <RevealAppear>
             <BsArrowRight className="icon-arrow" />
+            </RevealAppear>
+            
             {/* <HiArrowRight className="icon-arrow" /> */}
           </div>
         </div>
@@ -124,7 +133,7 @@ const Home = () => {
                 </select>
                 <MdKeyboardArrowDown class="icon-filter" />
               </div>
-              
+
             </div>
           </div>
 

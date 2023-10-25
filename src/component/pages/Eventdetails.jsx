@@ -6,6 +6,8 @@ import Socialiconscs from "../others/Socialiconscs";
 import Event from "../Event/Event";
 import Footer from "../Footer/Footer";
 import { MainContainer } from "../Styled/Styled";
+import Reveal from "../Reveal/Reveal";
+import RevealAppear from "../Reveal/RevealAppear";
 
 const Eventdetails = () => {
   return (
@@ -18,6 +20,7 @@ const Eventdetails = () => {
           <MainContainer>
             {/* ---------wrap here */}
             <div className="ed-banner-content">
+              <Reveal>
               <div className="ed-writeup-banner">
                 <span>Eko All Night Pool Party Festival</span>
                 <p>
@@ -25,6 +28,9 @@ const Eventdetails = () => {
                   vivamus penatibus viverra aliquam diam.
                 </p>
               </div>
+              </Reveal>
+
+              <RevealAppear>
               <div className="date-time-card">
                 <span>Date & Time</span>
                 <p>Saturday, Nov 06, 2021 at 20:30PM</p>
@@ -36,6 +42,8 @@ const Eventdetails = () => {
                   Save Ticket
                 </button>
               </div>
+              </RevealAppear>
+
               <div className="back">
                 <a href="#">
                   <IoIosArrowRoundBack className="back-icon" /> Go Back
@@ -48,6 +56,7 @@ const Eventdetails = () => {
 
         <div className="details-container">
           <MainContainer>
+          <Reveal>
           <div className="des-loc-wrapper">
             <div className="des-div">
               <span className="span-des">Description</span>
@@ -95,7 +104,9 @@ const Eventdetails = () => {
             </div>
             {/* ----------close des-loc-wrapper */}
           </div>
+          </Reveal>
 
+          <Reveal>
           <div className="date-time-wrapper">
             <span className="span-date-time">Date and Time</span>
             <div className="date-time-container">
@@ -113,7 +124,9 @@ const Eventdetails = () => {
               </div>
             </div>
           </div>
+          </Reveal>
 
+          <Reveal>
           <div className="contact-organizer">
             <span className="span-organizer">How to contact the organizer</span>
             <p>
@@ -121,7 +134,9 @@ const Eventdetails = () => {
               or refer to the FAQ section for all questions.
             </p>
           </div>
+          </Reveal>
 
+          <Reveal>
           <div className="other-events-wrapper">
             <span className="span-other">Other event you might like</span>
             <div className="other-events">
@@ -130,6 +145,7 @@ const Eventdetails = () => {
               <Event />
             </div>
           </div>
+          </Reveal>
 
           {/* ----------close details container */}
           </MainContainer>
